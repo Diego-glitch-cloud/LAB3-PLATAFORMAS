@@ -25,3 +25,16 @@ class IceCream (name: String, price: Float): Food(name, price), Dessert {
         return "Coma el helado frío, con una servilleta acompañándolo. Puede acompañarlo de más chocolate si gusta."
     }
 }
+
+abstract class Drink(name: String, price: Float): Food(name, price) {
+    abstract fun pour(): String
+}
+
+class Juice(name: String, price: Float): Drink(name, price) {
+    override fun pour(): String {
+        return "Vierta el jugo suavemente por los costados del vaso para que no se derrame"
+    }
+    override fun cook(): String{
+        return "Corte las frutas a gusto propio, y con un tenedor exprima su contenido dentro del recipiente."
+    }
+}

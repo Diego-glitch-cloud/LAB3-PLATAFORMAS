@@ -15,3 +15,13 @@ class Pizza (name: String, price: Float): Food(name, price) {
                 "hasta que el queso burbujee y la masa esté crujiente y dorada."
     }
 }
+
+class IceCream (name: String, price: Float): Food(name, price), Dessert {
+    override fun cook(): String {
+        return "Congelando el helado hasta que esté listo para servir y disfrutar."
+    }
+
+    override fun eat(): String {
+        return "Coma el helado frío, con una servilleta acompañándolo. Puede acompañarlo de más chocolate si gusta."
+    }
+}

@@ -12,14 +12,28 @@ fun main() {
     val helado = IceCream("Chocolate", 15.00)
     val jugo = Juice("Banano y fresa ", 16.00)
 
-    println("Impresión de las comidas ----> \n")
+    println("---------------- AXIS PAWAS MENU -------------------\n")
 
     println("Hamburguesa: ${hamburguesa.name} | Precio: ${hamburguesa.price}")
+    println("Como cocinar: ${hamburguesa.cook()}\n")
+
     println("Pizza: ${pizza.name} | Precio: ${pizza.price}")
+    println("Como cocinar: ${pizza.cook()}\n")
+
     println("Helado: ${helado.name} | Precio: ${helado.price}")
-    println("Jugo: ${jugo.name} | Precio: ${jugo.price}\n")
+    println("Como preparar: ${helado.cook()}\n")
+
+    println("Jugo: ${jugo.name} | Precio: ${jugo.price}")
+    println("Como hacer: ${jugo.cook()}\n")
 
     println("----------------------------------------------\n")
 
-    println("¿Cómo debería comer mi heladito? ---> ${helado.eat()}")
+    println("¿Cómo debería comer mi heladito? ---> ${helado.eat()}\n")
+
+    println("----------------------------------------------\n")
+
+    val descuento = 63.00
+    println("LA HAMBURGUESA ${hamburguesa.name} TIENE ${descuento}% DE DESCUENTO!")
+    println("Precio antes: ${hamburguesa.price} | Precio ahora: ${hamburguesa.discountedPrice(descuento)}")
+
 }

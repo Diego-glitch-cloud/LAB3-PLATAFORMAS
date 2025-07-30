@@ -38,3 +38,8 @@ class Juice(name: String, price: Float): Drink(name, price) {
         return "Corte las frutas a gusto propio, y con un tenedor exprima su contenido dentro del recipiente."
     }
 }
+
+fun Food.discountedPrice(porcentaje: Double): Double {
+    val descuento = (porcentaje / 100) * this.price
+    return this.price - descuento
+}

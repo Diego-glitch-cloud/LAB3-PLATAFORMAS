@@ -1,22 +1,22 @@
-abstract class Food (val name: String, val price: Float) {
+abstract class Food (val name: String, val price: Double) {
     abstract fun cook(): String
 }
 
-class Burguer (name: String, price: Float): Food(name, price) {
+class Burguer (name: String, price: Double): Food(name, price) {
     override fun cook():String {
         return "Asando la jugosa hamburguesa a la perfección en la parrilla caliente, " +
                 "hasta que esté dorada por fuera y tierna por dentro."
     }
 }
 
-class Pizza (name: String, price: Float): Food(name, price) {
+class Pizza (name: String, price: Double): Food(name, price) {
     override fun cook():String {
         return "Horneando la deliciosa pizza en el horno de piedra, " +
                 "hasta que el queso burbujee y la masa esté crujiente y dorada."
     }
 }
 
-class IceCream (name: String, price: Float): Food(name, price), Dessert {
+class IceCream (name: String, price: Double): Food(name, price), Dessert {
     override fun cook(): String {
         return "Congelando el helado hasta que esté listo para servir y disfrutar."
     }
@@ -26,11 +26,11 @@ class IceCream (name: String, price: Float): Food(name, price), Dessert {
     }
 }
 
-abstract class Drink(name: String, price: Float): Food(name, price) {
+abstract class Drink(name: String, price: Double): Food(name, price) {
     abstract fun pour(): String
 }
 
-class Juice(name: String, price: Float): Drink(name, price) {
+class Juice(name: String, price: Double): Drink(name, price) {
     override fun pour(): String {
         return "Vierta el jugo suavemente por los costados del vaso para que no se derrame"
     }

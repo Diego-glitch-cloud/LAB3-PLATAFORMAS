@@ -17,7 +17,9 @@ fun main() {
     println("Hamburguesa: ${hamburguesa.name} | Precio: ${hamburguesa.price}")
     println("Pizza: ${pizza.name} | Precio: ${pizza.price}")
     println("Helado: ${helado.name} | Precio: ${helado.price}")
-    println("Jugo: ${jugo.name} | Precio: ${jugo.price}")
+    println("Jugo: ${jugo.name} | Precio: ${jugo.price}\n")
 
+    println("----------------------------------------------\n")
 
+    println("¿Cómo debería comer mi heladito? ---> ${helado.eat()}")
 }

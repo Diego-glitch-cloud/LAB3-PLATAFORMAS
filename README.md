@@ -1,1 +1,4 @@
 # LAB3-PLATAFORMAS
+
+LINK VIDEO YOUTUBE
+https://youtu.be/KzvCz5u1cUs?si=-pA1fwXGYqSOcBAY 
